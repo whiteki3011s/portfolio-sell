@@ -1,0 +1,595 @@
+@import "tailwindcss";
+
+@theme {
+    /* Color Palette - Deep Space & Neon */
+    --color-background: oklch(0.1 0.02 260);
+    /* Deep space black/blue */
+    --color-foreground: oklch(0.98 0.01 260);
+
+    --color-card: oklch(0.15 0.03 260);
+    --color-card-foreground: oklch(0.98 0.01 260);
+
+    --color-primary: oklch(0.65 0.25 280);
+    /* Neon Purple */
+    --color-primary-foreground: oklch(0.98 0.01 260);
+
+    --color-secondary: oklch(0.7 0.2 220);
+    /* Neon Blue */
+    --color-secondary-foreground: oklch(0.1 0.02 260);
+
+    --color-accent: oklch(0.85 0.2 310);
+    /* Neon Pink/Magenta */
+    --color-accent-foreground: oklch(0.1 0.02 260);
+
+    --color-muted: oklch(0.25 0.03 260);
+    --color-muted-foreground: oklch(0.7 0.02 260);
+
+    --color-border: oklch(0.25 0.03 260);
+    --color-input: oklch(0.25 0.03 260);
+    --color-ring: oklch(0.65 0.25 280);
+
+    /* Typography */
+    --font-family-montserrat: var(--font-montserrat), sans-serif;
+    --font-family-inter: var(--font-inter), sans-serif;
+
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* Spacing */
+    --spacing-section: 8rem;
+    --spacing-section-md: 6rem;
+    --spacing-section-sm: 4rem;
+
+    /* Shadows & Glows */
+    --shadow-glow-primary: 0 0 20px oklch(0.65 0.25 280 / 0.3);
+    --shadow-glow-primary-strong: 0 0 40px oklch(0.65 0.25 280 / 0.5);
+    --shadow-glow-secondary: 0 0 20px oklch(0.7 0.2 220 / 0.3);
+    --shadow-glow-secondary-strong: 0 0 40px oklch(0.7 0.2 220 / 0.5);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Base Styles */
+* {
+    border-color: var(--color-border);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: var(--font-family-montserrat);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: color-mix(in oklch, var(--color-primary) 40%, transparent);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+}
+
+h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h3 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h4 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+p {
+    line-height: 1.6;
+    color: var(--color-muted-foreground);
+}
+
+/* Utilities */
+.text-gradient {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-accent));
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.text-gradient-animated {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: gradient-shift 8s linear infinite;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* High-Fidelity "Gunmetal Glass" */
+.glass-gunmetal {
+    background: oklch(0.12 0.02 260 / 0.6);
+    /* Gunmetal with transparency */
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Outer border */
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+        /* Inner hairline */
+        0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    /* Deep shadow */
+}
+
+.glass-strong {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    /* Smooth OS-like ease */
+}
+
+.card-hover:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow:
+        0 20px 40px -10px rgba(0, 0, 0, 0.5),
+        0 0 30px -5px oklch(0.70 0.15 250 / 0.3);
+    /* Iridium Blue Bloom */
+    border-color: oklch(0.90 0.05 240 / 0.5);
+    /* Liquid Silver Border */
+}
+
+/* Specific Utilities for Filter Bar */
+.border-liquid-silver {
+    border-color: oklch(0.90 0.05 240 / 0.8);
+    box-shadow: 0 0 15px oklch(0.90 0.05 240 / 0.3);
+}
+
+.glow-iridium:hover {
+    box-shadow: 0 0 20px oklch(0.70 0.15 250 / 0.4);
+    border-color: oklch(0.70 0.15 250 / 0.6);
+}
+
+.halo-bismuth {
+    background: linear-gradient(135deg, oklch(0.80 0.12 320 / 0.1), oklch(0.70 0.15 250 / 0.1));
+    box-shadow:
+        0 0 0 1px oklch(0.90 0.05 240 / 0.5),
+        /* Silver outline */
+        0 0 30px oklch(0.80 0.12 320 / 0.3);
+    /* Bismuth Glow */
+}
+
+/* Volumetric Orbs */
+.orb-glow {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.4;
+    z-index: -1;
+    pointer-events: none;
+    animation: float-slow 20s infinite alternate ease-in-out;
+}
+
+@keyframes float-slow {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, -50px);
+    }
+}
+
+/* Animations */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: var(--shadow-glow-primary);
+    }
+
+    50% {
+        box-shadow: var(--shadow-glow-primary-strong);
+    }
+}
+
+.btn-primary {
+    background: color-mix(in oklch, var(--color-primary) 90%, white);
+    box-shadow: var(--shadow-glow-primary-strong);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--color-secondary);
+    color: var(--color-secondary-foreground);
+}
+
+.btn-secondary:hover {
+    background: color-mix(in oklch, var(--color-secondary) 90%, white);
+    box-shadow: var(--shadow-glow-secondary);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+    box-shadow: var(--shadow-glow-primary);
+}
+
+.container-custom {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 80rem;
+}
+
+.section {
+    padding-top: var(--spacing-section);
+    padding-bottom: var(--spacing-section);
+    position: relative;
+}
+
+/* Noise Texture */
+.bg-noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Spotlight Effect */
+.spotlight-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.spotlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.06),
+            transparent 40%);
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.spotlight-card:hover::before {
+    opacity: 1;
+}
+
+/* Glitch Text Effect */
+.glitch-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch {
+    position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 #ff00c1;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim-1 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -1px 0 #00fff9;
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim-2 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0% {
+        clip: rect(30px, 9999px, 10px, 0);
+    }
+
+    5% {
+        clip: rect(70px, 9999px, 90px, 0);
+    }
+
+    10% {
+        clip: rect(20px, 9999px, 50px, 0);
+    }
+
+    15% {
+        clip: rect(80px, 9999px, 10px, 0);
+    }
+
+    20% {
+        clip: rect(10px, 9999px, 40px, 0);
+    }
+
+    25% {
+        clip: rect(50px, 9999px, 20px, 0);
+    }
+
+    30% {
+        clip: rect(90px, 9999px, 60px, 0);
+    }
+
+    35% {
+        clip: rect(30px, 9999px, 80px, 0);
+    }
+
+    40% {
+        clip: rect(60px, 9999px, 10px, 0);
+    }
+
+    45% {
+        clip: rect(20px, 9999px, 50px, 0);
+    }
+
+    50% {
+        clip: rect(70px, 9999px, 30px, 0);
+    }
+
+    55% {
+        clip: rect(10px, 9999px, 90px, 0);
+    }
+
+    60% {
+        clip: rect(50px, 9999px, 20px, 0);
+    }
+
+    65% {
+        clip: rect(80px, 9999px, 60px, 0);
+    }
+
+    70% {
+        clip: rect(30px, 9999px, 40px, 0);
+    }
+
+    75% {
+        clip: rect(60px, 9999px, 10px, 0);
+    }
+
+    80% {
+        clip: rect(20px, 9999px, 70px, 0);
+    }
+
+    85% {
+        clip: rect(90px, 9999px, 30px, 0);
+    }
+
+    90% {
+        clip: rect(40px, 9999px, 80px, 0);
+    }
+
+    95% {
+        clip: rect(10px, 9999px, 50px, 0);
+    }
+
+    100% {
+        clip: rect(60px, 9999px, 20px, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip: rect(60px, 9999px, 20px, 0);
+    }
+
+    5% {
+        clip: rect(10px, 9999px, 50px, 0);
+    }
+
+    10% {
+        clip: rect(40px, 9999px, 80px, 0);
+    }
+
+    15% {
+        clip: rect(90px, 9999px, 30px, 0);
+    }
+
+    20% {
+        clip: rect(20px, 9999px, 70px, 0);
+    }
+
+    25% {
+        clip: rect(60px, 9999px, 10px, 0);
+    }
+
+    30% {
+        clip: rect(30px, 9999px, 40px, 0);
+    }
+
+    35% {
+        clip: rect(80px, 9999px, 60px, 0);
+    }
+
+    40% {
+        clip: rect(50px, 9999px, 20px, 0);
+    }
+
+    45% {
+        clip: rect(10px, 9999px, 90px, 0);
+    }
+
+    50% {
+        clip: rect(70px, 9999px, 30px, 0);
+    }
+
+    55% {
+        clip: rect(20px, 9999px, 50px, 0);
+    }
+
+    60% {
+        clip: rect(60px, 9999px, 10px, 0);
+    }
+
+    65% {
+        clip: rect(30px, 9999px, 80px, 0);
+    }
+
+    70% {
+        clip: rect(90px, 9999px, 60px, 0);
+    }
+
+    75% {
+        clip: rect(50px, 9999px, 20px, 0);
+    }
+
+    80% {
+        clip: rect(10px, 9999px, 40px, 0);
+    }
+
+    85% {
+        clip: rect(80px, 9999px, 10px, 0);
+    }
+
+    90% {
+        clip: rect(20px, 9999px, 50px, 0);
+    }
+
+    95% {
+        clip: rect(70px, 9999px, 90px, 0);
+    }
+
+    100% {
+        clip: rect(30px, 9999px, 10px, 0);
+    }
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+
+.animate-marquee2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee2 15s linear infinite;
+}

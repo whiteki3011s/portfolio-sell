@@ -1,0 +1,7 @@
+2025-12-04T21:39:51.604Z: Authorize called
+2025-12-04T21:39:51.606Z: Connecting to DB...
+2025-12-04T21:39:53.004Z: DB Connected
+2025-12-04T21:39:53.005Z: Finding user: fast@gmail.com
+2025-12-04T21:39:53.822Z: User found
+2025-12-04T21:39:53.822Z: Checking password...
+2025-12-04T21:39:53.933Z: Password correct

@@ -1,0 +1,19 @@
+Testing MongoDB Connection...
+URI: mongodb+srv://sharmabhay2006:2006@cluster0.98yktcp.mongodb.net/
+✅ Connected successfully
+Attempting to create doc...
+✅ Write successful
+Attempting to find doc...
+✅ Read successful: {"_id":"6931fe9ce59bfc1c54a52c40","name":"debug-test","__v":0}
+Connection closed
+Testing MongoDB Connection...
+URI: mongodb+srv://sharmabhay2006:2006@cluster0.98yktcp.mongodb.net/
+NEXTAUTH_SECRET present: true
+NEXTAUTH_URL present: true
+NEXTAUTH_URL: http://localhost:3000
+✅ Connected successfully
+Attempting to create doc...
+✅ Write successful
+Attempting to find doc...
+✅ Read successful: {"_id":"6931fe9ce59bfc1c54a52c40","name":"debug-test","__v":0}
+Connection closed

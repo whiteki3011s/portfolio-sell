@@ -1,0 +1,30 @@
+
+> rechrome-portfolio@1.0.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\sharm\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\sharm\OneDrive\Desktop\Rechrome - Home_files\portfolio-design-website\package-lock.json
+
+   ▲ Next.js 15.5.6
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 6.8s
+   Linting and checking validity of types ...
+Failed to compile.
+
+./components/templates/y2k-aesthetic/Y2KGuestbook.tsx:24:25
+Type error: Property 'marquee' does not exist on type 'JSX.IntrinsicElements'.
+
+[0m [90m 22 |[39m                         [33m<[39m[33mmarquee[39m className[33m=[39m[32m"bg-[#ccff00] text-[#000033] py-1 font-bold"[39m[33m>[39m
+ [90m 23 |[39m                             [33mWELCOME[39m [33mTO[39m [33mMY[39m [33mWORLD[39m [33m--[39m[33m-[39m [33mSIGN[39m [33mTHE[39m [33mGUESTBOOK[39m [33m--[39m[33m-[39m [33mDON[39m[32m'T FORGET TO BOOKMARK![39m
+[31m[1m>[22m[39m[90m 24 |[39m                         [33m<[39m[33m/[39m[33mmarquee[39m[33m>[39m
+ [90m    |[39m                         [31m[1m^[22m[39m
+ [90m 25 |[39m                     [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 26 |[39m
+ [90m 27 |[39m                     [33m<[39m[33mdiv[39m className[33m=[39m[32m"space-y-8"[39m[33m>[39m[0m
+Next.js build worker exited with code: 1 and signal: null

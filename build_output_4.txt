@@ -1,0 +1,54 @@
+
+> rechrome-portfolio@1.0.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\sharm\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\sharm\OneDrive\Desktop\Rechrome - Home_files\portfolio-design-website\package-lock.json
+
+   ▲ Next.js 15.5.6
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 10.7s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/15) ...
+   Generating static pages (3/15) 
+   Generating static pages (7/15) 
+   Generating static pages (11/15) 
+ ✓ Generating static pages (15/15)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      34 kB         188 kB
+├ ○ /_not-found                            996 B         103 kB
+├ ○ /about                               6.76 kB         150 kB
+├ ○ /admin                               7.36 kB         222 kB
+├ ○ /admin/analytics                     6.47 kB         221 kB
+├ ○ /admin/login                          2.2 kB         142 kB
+├ ○ /admin/portfolio                     6.48 kB         150 kB
+├ ƒ /api/analytics                         136 B         102 kB
+├ ƒ /api/auth/login                        136 B         102 kB
+├ ƒ /api/auth/logout                       136 B         102 kB
+├ ƒ /api/portfolio                         136 B         102 kB
+├ ƒ /api/portfolio/[id]                    136 B         102 kB
+├ ○ /contact                             4.15 kB         155 kB
+├ ƒ /demos/[templateId]                  53.2 kB         200 kB
+├ ○ /portfolio                           4.14 kB         155 kB
+└ ƒ /portfolio/[id]                      10.6 kB         154 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-a78b69fc76e8afca.js       45.5 kB
+  ├ chunks/4bd1b696-409494caf8c83275.js  54.2 kB
+  └ other shared chunks (total)          2.01 kB
+
+
+ƒ Middleware                             34.1 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
