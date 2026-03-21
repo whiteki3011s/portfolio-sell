@@ -4,6 +4,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import { CartProvider } from '@/context/CartContext';
 import CartDrawer from '@/components/CartDrawer';
 import AuthProvider from '@/components/AuthProvider';
+import { Analytics } from '@vercel/analytics/next';
 
 import "./globals.css";
 
@@ -68,6 +69,7 @@ export default function RootLayout({
                         <CartDrawer />
                     </CartProvider>
                 </AuthProvider>
+                <Analytics />
             </body>
         </html>
     );
