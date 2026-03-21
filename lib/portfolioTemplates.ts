@@ -28,7 +28,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Three.js', 'GSAP', 'Tailwind CSS'],
         features: ['Hero-based 3D visuals', 'Scroll-triggered animations', 'High-contrast typography', 'Cinematic transitions', 'Modern tech aesthetic', 'Glassmorphic UI elements'],
         badges: ['Best Seller', 'New'],
-        price: '$299'
+        price: '₹1499'
     },
     {
         id: 'minimal-noir',
@@ -41,7 +41,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
         features: ['Clean monochrome palette', 'Strong typographic hierarchy', 'Grid-based layout', 'Soft micro-interactions', 'Ultra-responsive design', 'Focus on white space'],
         badges: ['Popular'],
-        price: '$199'
+        price: '₹1499'
     },
     {
         id: 'studio-grid',
@@ -54,7 +54,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
         features: ['Case-study oriented layout', 'Service sections & testimonials', 'Project timeline components', 'Clear navigation system', 'Business-friendly design tone', 'Client showcase areas'],
         badges: ['New'],
-        price: '$249'
+        price: '₹1499'
     },
     {
         id: 'motion-lab',
@@ -67,7 +67,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'GSAP', 'Framer Motion', 'Lenis'],
         features: ['GSAP / Framer Motion animations', 'Scroll storytelling sequences', 'Dynamic hover effects', 'Interactive project previews', 'Playful yet controlled chaos', 'Kinetic typography'],
         badges: ['New'],
-        price: '$279'
+        price: '₹1499'
     },
     {
         id: 'lightfolio',
@@ -79,7 +79,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(254, 249, 195) 0%, rgb(253, 224, 71) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
         features: ['Light theme with soft tones', 'Simple navigation', 'Guided section layout', 'Fast loading and responsive', 'Easy customization structure', 'Accessibility focused'],
-        price: '$149'
+        price: '₹1499'
     },
     {
         id: 'brutal-edge',
@@ -92,7 +92,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'CSS Grid', 'Tailwind CSS'],
         features: ['Asymmetrical grids', 'Distorted typography', 'Raw digital textures', 'High-impact transitions', 'Statement visuals', 'Unconventional spacing'],
         badges: ['Popular'],
-        price: '$229'
+        price: '₹1499'
     },
     {
         id: 'dark-code',
@@ -105,7 +105,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Prism.js'],
         features: ['Terminal-inspired UI', 'Syntax-highlighted code blocks', 'Tech stack visualization', 'GitHub integration ready', 'Command-line interactions', 'Monospace typography system'],
         badges: ['Popular'],
-        price: '$219'
+        price: '₹1499'
     },
     {
         id: 'photo-gallery',
@@ -117,7 +117,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(219, 234, 254) 0%, rgb(147, 197, 253) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
         features: ['Full-screen image galleries', 'Lazy loading optimization', 'Lightbox with keyboard nav', 'Smooth image transitions', 'Minimal UI overlay', 'Mobile-optimized viewing'],
-        price: '$199'
+        price: '₹1499'
     },
     {
         id: 'cyber-glitch',
@@ -129,7 +129,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(0, 255, 255) 0%, rgb(255, 0, 255) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'CSS Glitch', 'Tailwind CSS'],
         features: ['Glitch text effects', 'Neon borders', 'HUD interface', 'Cyberpunk styling', 'Terminal commands', 'High contrast'],
-        price: '$249'
+        price: '₹1499'
     },
     {
         id: 'neo-brutalism',
@@ -141,7 +141,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(163, 230, 53) 0%, rgb(250, 204, 21) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS'],
         features: ['Hard shadows', 'Thick borders', 'Vibrant colors', 'Playful layout', 'Bold typography', 'Retro vibes'],
-        price: '$199'
+        price: '₹1499'
     },
     {
         id: 'glass-morphism',
@@ -153,7 +153,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgb(56, 189, 248) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Backdrop Filter'],
         features: ['Frosted glass cards', 'Mesh gradients', 'Depth effects', 'Clean typography', 'Floating elements', 'Premium feel'],
-        price: '$229'
+        price: '₹1499'
     },
     {
         id: 'vapor-wave',
@@ -165,7 +165,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(244, 114, 182) 0%, rgb(29, 26, 57) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'CSS Grid'],
         features: ['Synthwave palette', 'Grid backgrounds', 'Retro typography', 'VHS effects', 'Neon glows', 'Nostalgic feel'],
-        price: '$199'
+        price: '₹1499'
     },
     {
         id: 'retro-8bit',
@@ -177,7 +177,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(34, 197, 94) 0%, rgb(30, 41, 59) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Pixel Art'],
         features: ['Pixel fonts', 'Blocky UI', 'Game interactions', 'Retro colors', 'Sprite animations', 'Fun layout'],
-        price: '$179'
+        price: '₹1499'
     },
     {
         id: 'dark-saas',
@@ -189,7 +189,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(99, 102, 241) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS'],
         features: ['Dark mode optimization', 'Clean gradients', 'Feature grids', 'Trust signals', 'Modern typography', 'Professional tone'],
-        price: '$249'
+        price: '₹1499'
     },
     {
         id: 'swiss-style',
@@ -201,7 +201,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(220, 38, 38) 0%, rgb(245, 245, 245) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'CSS Grid', 'Tailwind CSS'],
         features: ['Grid systems', 'Helvetica vibes', 'Asymmetry', 'Bold colors', 'Clean layout', 'Typographic focus'],
-        price: '$189'
+        price: '₹1499'
     },
     {
         id: 'editorial-fashion',
@@ -213,7 +213,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(255, 250, 240) 0%, rgb(180, 83, 9) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS'],
         features: ['Serif typography', 'Magazine layout', 'Image focus', 'Elegant spacing', 'Soft colors', 'Luxury feel'],
-        price: '$219'
+        price: '₹1499'
     },
     {
         id: 'abstract-shapes',
@@ -225,7 +225,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(244, 63, 94) 0%, rgb(251, 191, 36) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Framer Motion', 'SVG'],
         features: ['Organic shapes', 'Fluid animation', 'Bright colors', 'Friendly vibe', 'Custom SVGs', 'Interactive background'],
-        price: '$199'
+        price: '₹1499'
     },
     {
         id: 'paper-texture',
@@ -237,7 +237,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(245, 245, 240) 0%, rgb(168, 162, 158) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'CSS Filters'],
         features: ['Paper grain', 'Torn edges', 'Collage layout', 'Tactile feel', 'Warm tones', 'Artistic vibe'],
-        price: '$179'
+        price: '₹1499'
     },
     {
         id: 'monochrome-pro',
@@ -249,7 +249,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS'],
         features: ['High contrast', 'Black & White', 'Bold type', 'Minimalist', 'Focus on content', 'Timeless'],
-        price: '$199'
+        price: '₹1499'
     },
     {
         id: 'gradient-flow',
@@ -261,7 +261,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         thumbnail: 'linear-gradient(135deg, rgb(99, 102, 241) 0%, rgb(34, 211, 238) 100%)',
         technologies: ['Next.js 15', 'TypeScript', 'WebGL', 'Tailwind CSS'],
         features: ['Mesh gradients', 'Color shifting', 'Soft UI', 'Dreamy vibe', 'Glass effects', 'Modern aesthetic'],
-        price: '$229'
+        price: '₹1499'
     },
     {
         id: 'film-grain',
@@ -274,7 +274,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS'],
         features: ['Film grain texture', 'Monochrome palette', 'Cinematic layout', 'Video player', 'Analog aesthetics', 'Moody vibe'],
         badges: ['New'],
-        price: '$199'
+        price: '₹1499'
     },
     {
         id: 'bauhaus-art',
@@ -287,7 +287,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'CSS Grid'],
         features: ['Geometric shapes', 'Primary colors', 'Grid system', 'Bold typography', 'Minimalist icons', 'Art movement tribute'],
         badges: ['New'],
-        price: '$189'
+        price: '₹1499'
     },
     {
         id: 'y2k-aesthetic',
@@ -300,7 +300,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'CSS Animations'],
         features: ['Chrome effects', 'Cyber text', 'Retro elements', 'Guestbook section', 'Nostalgic vibe', 'Late 90s aesthetic'],
         badges: ['New'],
-        price: '$179'
+        price: '₹1499'
     },
     {
         id: 'nature-calm',
@@ -313,7 +313,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
         features: ['Earth tones', 'Nature photography', 'Organic shapes', 'Serene atmosphere', 'Gentle animations', 'Eco-friendly vibe'],
         badges: ['New'],
-        price: '$189'
+        price: '₹1499'
     },
     {
         id: 'neon-nights',
@@ -326,7 +326,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'CSS Glow'],
         features: ['Neon glow effects', 'Dark theme', 'Cyberpunk style', 'Glowing borders', 'Futuristic UI', 'High contrast'],
         badges: ['New'],
-        price: '$219'
+        price: '₹1499'
     },
     {
         id: 'tech-minimal',
@@ -339,7 +339,7 @@ export const portfolioTemplates: PortfolioTemplate[] = [
         technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS'],
         features: ['Terminal aesthetic', 'Mono typography', 'Clean interface', 'Code-focused', 'Minimal design', 'Developer-friendly'],
         badges: ['New'],
-        price: '$169'
+        price: '₹1499'
     }
 ];
 
