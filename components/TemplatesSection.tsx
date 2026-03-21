@@ -90,8 +90,8 @@ export default function TemplatesSection() {
                                 </p>
 
                                 <div className="flex items-center justify-between mt-auto">
-                                    <div className="font-bold text-lg text-white">
-                                        ₹1499 <span className="text-muted-foreground text-sm font-medium">/ $19</span>
+                                    <div className="font-bold text-lg text-white mt-4">
+                                        {template.price} <span className="text-muted-foreground text-sm font-medium line-through ml-1">₹{parseInt(template.price.replace('₹', '')) * 2}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <Link 
@@ -100,12 +100,14 @@ export default function TemplatesSection() {
                                         >
                                             Preview
                                         </Link>
-                                        <button 
-                                            onClick={() => alert("Redirect to Gumroad Link")}
+                                        <a 
+                                            href={`https://wa.me/+918770846086?text=Hey,%20I%20want%20the%20${template.name.replace(/ /g, '%20')}%20template.%20Can%20you%20share%20the%20UPI%20ID?`}
+                                            target="_blank"
+                                            rel="noreferrer"
                                             className="px-4 py-2 rounded-full bg-foreground text-background text-xs font-bold hover:bg-primary hover:text-primary-foreground transition-colors"
                                         >
-                                            Buy Now
-                                        </button>
+                                            Get Template
+                                        </a>
                                     </div>
                                 </div>
                             </div>

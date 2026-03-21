@@ -67,7 +67,7 @@ export default function TemplatesPage() {
                                     <div className="flex items-center justify-between border-t border-white/10 pt-6 mb-2">
                                         <div className="text-sm text-zinc-400 font-medium">One-time payment</div>
                                         <div className="font-bold text-2xl text-white">
-                                            ₹1499 <span className="text-muted-foreground text-sm font-medium line-through ml-1">{template.price}</span>
+                                            {template.price} <span className="text-muted-foreground text-sm font-medium line-through ml-1">₹{parseInt(template.price.replace('₹', '')) * 2}</span>
                                         </div>
                                     </div>
                                     
@@ -79,10 +79,12 @@ export default function TemplatesPage() {
                                             Live Demo
                                         </Link>
                                         <a 
-                                            href="#gumroad-placeholder"
+                                            href={`https://wa.me/918770846086?text=Hey,%20I%20want%20the%20${template.name.replace(/ /g, '%20')}%20template.%20Can%20you%20share%20the%20UPI%20ID?`}
+                                            target="_blank"
+                                            rel="noreferrer"
                                             className="flex items-center justify-center w-full py-3 rounded-full bg-primary text-black text-sm font-bold hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)] transition-all"
                                         >
-                                            Buy Now
+                                            Get Template
                                         </a>
                                     </div>
                                 </div>

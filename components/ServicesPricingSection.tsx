@@ -17,7 +17,7 @@ const pricingPlans = [
             "Fast delivery (48 hours)"
         ],
         ctaText: "Get Started",
-        ctaHref: "https://wa.me/yourwhatsappnumber", // Placeholder link
+        ctaHref: "https://wa.me/+918770846086?text=Hey,%20I'm%20interested%20in%20the%20Starter%20Portfolio%20package.",
         popular: false
     },
     {
@@ -33,7 +33,7 @@ const pricingPlans = [
             "Premium UI/UX layout"
         ],
         ctaText: "Get Started",
-        ctaHref: "https://wa.me/yourwhatsappnumber", // Placeholder link
+        ctaHref: "https://wa.me/+918770846086?text=Hey,%20I'm%20interested%20in%20the%20Premium%20Portfolio%20package.",
         popular: true
     },
     {
@@ -49,7 +49,7 @@ const pricingPlans = [
             "Highest tier cinematic visuals"
         ],
         ctaText: "Get Started",
-        ctaHref: "https://wa.me/yourwhatsappnumber", // Placeholder link
+        ctaHref: "https://wa.me/+918770846086?text=Hey,%20I'm%20interested%20in%20the%203D%20Experience%20package.",
         popular: false
     }
 ];

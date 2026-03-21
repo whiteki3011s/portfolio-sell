@@ -31,9 +31,9 @@ export default function MinimalNoirAbout() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
-                        className="grid grid-cols-2 gap-8"
+                        className="flex flex-col sm:flex-row gap-12 sm:gap-24"
                     >
-                        <div>
+                        <div className="flex-1">
                             <h3 className="text-sm font-bold uppercase tracking-widest mb-4">Recognition</h3>
                             <ul className="space-y-2 text-gray-600 text-sm">
                                 <li>Awwwards — Site of the Day (x3)</li>
@@ -42,7 +42,7 @@ export default function MinimalNoirAbout() {
                                 <li>Behance — Featured in Interaction</li>
                             </ul>
                         </div>
-                        <div>
+                        <div className="flex-1">
                             <h3 className="text-sm font-bold uppercase tracking-widest mb-4">Select Clients</h3>
                             <ul className="space-y-2 text-gray-600 text-sm">
                                 <li>Vogue International</li>
